@@ -1,8 +1,9 @@
 package org.example.service;
 
-import org.example.model.Productos;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.example.model.Productos;
 
 public class RepositorioProductos {
     private static RepositorioProductos instancia;
@@ -24,11 +25,6 @@ public class RepositorioProductos {
         listaProductos.add(p);
     }
 
-
-
-    /*public List<Productos> getListaProductos() {
-        return listaProductos;
-    }*/
 
     public List<Productos> getListaProductos() {
         return new ArrayList<>(listaProductos);

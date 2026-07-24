@@ -4,11 +4,13 @@ public abstract class Productos {
     private int idProductos;
     private String nombre;
     private double precio;
+    private int stock;
 
-    public Productos(int idProductos, String nombre, double precio) {
+    public Productos(int idProductos, String nombre, double precio, int stock) {
         this.idProductos = idProductos;
         this.nombre = nombre;
         this.precio = precio;
+        this.stock = stock;
     }
 
     public abstract String obtenerDetalleComercial();
@@ -35,5 +37,13 @@ public abstract class Productos {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

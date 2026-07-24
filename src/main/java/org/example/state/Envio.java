@@ -7,7 +7,7 @@ public class Envio {
 
     public Envio(String destino) {
         this.destino = destino;
-        this.estadoActual = new EstadoPendiente(); // inicia en Pendiente
+        this.estadoActual = new EstadoPendiente();
     }
 
     public void cambiarEstado(EstadoEnvio nuevoEstado) {
